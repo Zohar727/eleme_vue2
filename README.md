@@ -5,7 +5,8 @@
 
 >- demo地址[demo](http://e.zohar.com.cn/#/goods) 
 >- 手机扫码查看
->- ![扫一扫](http://e.zohar.com.cn/img/eleme.png)
+
+> ![扫一扫](http://e.zohar.com.cn/img/eleme.png)
 
 ***
 ## 安装步骤
