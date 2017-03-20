@@ -1,0 +1,26 @@
+body,html
+  line-height :1
+  font-weight :200
+  font-family :'PingFang SC','STHeitSC-Light','Helvetica-Light',Arial,sans-serif
+
+.clearfix
+  display :inline-block
+  &:after
+    display :block
+    content :""
+    height :0
+    line-height :0
+    clear :both
+    visibility :hidden
+
+@media (min-device-pixel-radio:1.5),(-webkit-min-device-pixel-radio:1.5)
+  .border-1px
+    &:after
+      transform :scaleY(0.7)
+      -webkit-transform :scaleY(0.7)
+
+@media (min-device-pixel-radio:2.0),(-webkit-min-device-pixel-radio:2.0)
+  .border-1px
+    &:after
+      transform :scaleY(0.5)
+      -webkit-transform :scaleY(0.5)
