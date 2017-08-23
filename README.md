@@ -1,6 +1,7 @@
 # eleme
 
 > 基于vue2.0 仿饿了么APP部分页面
+查看[demo](https://e.zohar.com.cn/eleme/#/goods)
 
 ## Build Setup
 
