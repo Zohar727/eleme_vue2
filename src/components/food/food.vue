@@ -89,15 +89,6 @@
                 this.showFlag = true;
                 this.selectType = ALL;
                 this.onlyContent = true;
-//                this.$nextTick(() => {
-//                    if(!this.scroll){
-//                        this.scroll =  new Bscroll(this.$refs.foods,{
-//                            click:true
-//                        })
-//                    }else {
-//                        this.scroll.refresh();
-//                    }
-//                });
                 this.$nextTick(() => {
                 if (!this.scroll) {
                   this.scroll = new Bscroll(this.$refs.foods, {

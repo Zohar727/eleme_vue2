@@ -37,15 +37,9 @@
       };
     },
     created() {
-//      this.$http.get('/api/seller?id=' + this.seller.id).then((response) => {
-//        response = response.body;
-//        if (response.errno === ERR_OK) {
-//          this.seller = Object.assign({}, this.seller, response.data);
-//        }
-//      });
 
       //修改get文件路径
-      this.$http.get(`/static/seller.json`).then((response) => {
+      this.$http.get(`./static/seller.json`).then((response) => {
           //response = response.body;
           this.seller = Object.assign({}, this.seller, response.data);
       }).catch((error) => {

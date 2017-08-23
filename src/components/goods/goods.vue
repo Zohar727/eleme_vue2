@@ -89,23 +89,7 @@
         },
         created(){
             this.classMap = ['decrease','discount','special','invoice','guarantee']
-//            this.$http.get('/api/goods').then(response => {
-//                response = response.body;
-//                if(response.errno === ERR_OK){
-//                    this.goods = response.data;
-//                    //console.log(this.goods);
-//                    //渲染dom后再进行计算
-//                    this.$nextTick(() => {
-//                      this._initScroll();
-//                      //计算索引高度，实现联动效果
-//                      this._calculateHeight();
-//                      //console.log('计算索引');
-//                    });
-//
-//                }
-//            });
-            this.$http.get(`/static/goods.json`).then((response) => {
-                //response = response.body;
+            this.$http.get(`./static/goods.json`).then((response) => {
                 this.goods = response.data;
                 this.$nextTick(() => {
                   this._initScroll();
